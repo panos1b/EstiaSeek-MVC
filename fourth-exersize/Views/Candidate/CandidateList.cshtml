@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "EstiaSeek - Candidates";
+}
+
+@model List<Applicant>    
+<a class="btn btn-outline-success" style = "background-color:rgb(35, 35, 35); color: white; border-color: rgb(72, 69, 69); margin-left: 0.5cm; margin-top: 0.5cm;" type="signout" href="./candidateSearch">Edit Filters</a>
+    <div class="container">
+        <table class="table table-hover table-normal">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Bio</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Experience</th>
+                    <th scope="col">Location</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+               <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.UserName</td>
+                    <td>@item.Bio</td>
+                    <td>@item.Email</td>
+                    <td>@item.Experience</td>
+                    <td>@item.Location</td>
+                </tr>
+            }
+               
+            </tbody>
+        </table>
+    </div>
