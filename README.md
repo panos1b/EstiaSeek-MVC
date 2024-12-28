@@ -11,3 +11,5 @@ Corporate users of the website have the possibility to post new jobs in their co
 If a user is not logged in, they can search for job candidates. However, for the rest of the website's processes, you need to register and log in.
 ### MVC implementation
 Currently only the searching of job candidates has been implemented
+### License
+Parts of the repository written by my are licensed under the EUPL
